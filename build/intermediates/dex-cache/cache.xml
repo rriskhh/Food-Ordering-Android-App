@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/libs/internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/pre-dexed/debug/internal_impl-22.2.1-10b7a6a8673bd453f59c6735029dc28ce782b300.jar" />
+    </item>
+    <item
+        jar="/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/design/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="1821601ddbec5ff125653097812823388700af74">
+        <dex dex="/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-7b226c7e199c4882bca805355bfd5193d46740e3.jar" />
+    </item>
+    <item
+        jar="/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-31966645e1c6512816ab8b22a2af6055e9636505.jar" />
+    </item>
+    <item
+        jar="/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/support-v4/22.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/pre-dexed/debug/classes-25eccae6838dbaaf673cbe07e8be1f24397eb75f.jar" />
+    </item>
+    <item
+        jar="/Users/rriskhh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.2.1/support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-22.2.1-839d55029e673fa2f7e29c61f71e67963a6f3f01.jar" />
+    </item>
+
+</items>

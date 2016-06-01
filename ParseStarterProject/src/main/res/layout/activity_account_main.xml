@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".account.Account_Main"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/account_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ff0000"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_bar">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingTop="5dp"
+            android:background="@null"
+            android:src="@drawable/logo_upper_small"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Kinion"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_bar"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16dp"
+            android:background="#ff0000"
+            android:text="Account"
+            android:textStyle="italic"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/account" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:id="@+id/text_mob"
+            android:layout_below="@+id/account"
+            android:paddingLeft="20dp"
+            android:textSize="15dp"
+            android:textColor="#ff0000"
+            android:layout_marginTop="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_mob"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/text_mob"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#000000"
+            android:editable="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail"
+            android:id="@+id/text_mail"
+            android:layout_below="@+id/edit_mob"
+            android:paddingLeft="20dp"
+            android:textSize="15dp"
+            android:textColor="#ff0000"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_mail"
+            android:ems="10"
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/text_mail"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:editable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:id="@+id/text_pwd"
+            android:layout_below="@+id/edit_mail"
+            android:paddingLeft="20dp"
+            android:textSize="15dp"
+            android:textColor="#ff0000"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_pwd"
+            android:ems="10"
+            android:textColor="#000000"
+            android:text="Change Password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/text_pwd"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:editable="false"
+            android:clickable="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:id="@+id/text_add"
+            android:layout_below="@+id/edit_pwd"
+            android:paddingLeft="20dp"
+            android:textSize="15dp"
+            android:textColor="#ff0000"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:text="No address added."
+            android:textColor="#000000"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/edit_add"
+            android:editable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_add"
+            android:ems="10"
+            android:textColor="#ff0000"
+            android:text="[+] Add Address"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/edit_add"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text=" "/>
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

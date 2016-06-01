@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tiffin_service.Tiffin_Service_Main"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ff0000"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_bar">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingTop="5dp"
+            android:background="@null"
+            android:src="@drawable/logo_upper_small"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Kinion"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/profile"
+            android:background="@null"
+            android:paddingTop="5dp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="210dp"
+            android:onClick="send_to_account"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_bar"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/pager_options">
+
+            <android.support.v4.view.PagerTabStrip
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:background="#ff0000"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:paddingBottom="3dp"/>
+
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

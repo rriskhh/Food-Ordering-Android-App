@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food_box.Specific_Box"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:id="@+id/account_layout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ff0000"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_bar">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingTop="5dp"
+            android:background="@null"
+            android:src="@drawable/logo_upper_small"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Kinion"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/profile"
+            android:background="@null"
+            android:paddingTop="5dp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="210dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="480dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textSize="16dp"
+                android:background="#ff0000"
+                android:text="Food Box"
+                android:textStyle="italic"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/food_box" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Rs.360"
+            android:textSize="30dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="left"
+            android:background="#ff0000"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Add to Cart"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="end"
+            android:textSize="30dp"
+            android:background="#ff0000"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+</LinearLayout><!-- From: file:/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/src/main/res/layout/activity_specific__box.xml -->

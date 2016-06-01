@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/red_back"
+    android:paddingTop="20dp"
+    tools:context="com.parse.starter.Login_Service"
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/logo"
+        android:background="@drawable/logo_comp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+         />
+
+    <Switch
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selection"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_marginTop="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/logo"
+        android:layout_toLeftOf="@+id/selection"
+        android:layout_toStartOf="@+id/selection" />
+
+    <TextView
+        android:layout_marginTop="34dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView2"
+        android:layout_below="@id/logo"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/selection"
+        android:layout_toEndOf="@+id/selection" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:maxLength="10"
+        android:layout_marginTop="15dp"
+        android:hint=" Mobile Number"
+        android:id="@+id/phone"
+        android:layout_below="@+id/selection"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="7dp"
+        android:hint=" E-Mail"
+        android:ems="10"
+        android:id="@+id/mail"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint=" Password"
+        android:layout_marginTop="7dp"
+        android:id="@+id/pwd"
+        android:layout_below="@+id/phone"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignStart="@+id/phone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:layout_marginTop="7dp"
+        android:id="@+id/startButton"
+        android:onClick="logOrSign"
+        android:layout_below="@+id/pwd"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="   (Skip this Step)"
+        android:id="@+id/skip"
+        android:layout_alignLeft="@+id/startButton"
+        android:layout_alignStart="@+id/startButton"
+        android:layout_below="@+id/startButton" />
+
+
+
+</RelativeLayout>
+<!-- From: file:/Users/rriskhh/Downloads/Parse-Starter-Project-1.13.0/ParseStarterProject/src/main/res/layout/activity_login__service.xml -->

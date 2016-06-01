@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".premium_service.Upload_New_Item"
+    android:orientation="vertical"
+    android:background="@color/theme_white"
+    android:id="@+id/upload">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/theme_red"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:id="@+id/ll_bar">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:paddingTop="5dp"
+            android:background="@null"
+            android:src="@drawable/logo_upper_small"
+            android:layout_gravity="start"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Kinion"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:textColor="@color/theme_white"
+            android:textStyle="bold"
+            />
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/profile"
+            android:background="@null"
+            android:paddingTop="5dp"
+            android:layout_gravity="end"
+            android:layout_marginLeft="190dp"
+            android:onClick="send_to_account"
+            />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textSize="16dp"
+            android:background="@color/theme_red"
+            android:text="Upload New Item"
+            android:textStyle="italic"
+            android:textColor="@color/theme_white"
+            android:gravity="center"
+            android:id="@+id/account"
+            android:onClick="add_New_Item"/>
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:hint="Mobile Number (*Required)"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:id="@+id/mob"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:hint="Item Name (*Required)"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_name"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:hint="Tag Line(Short Description)"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tag"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:hint="Item Description (*Required)"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:hint="Item Rate (*Required)"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:maxLength="5"
+            android:id="@+id/rate"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:hint="Place of Work (*Required)"
+            android:textColorHint="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/place"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:textColor="@color/theme_red"
+            android:textStyle="bold"
+            android:text="Can Deliver :\n(Incase NO, Delivery wil be handled by us)"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/deliver">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:button="@drawable/radio_button_selector"
+            android:id="@+id/radioButton_yes"
+            android:textColor="@color/black"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:button="@drawable/radio_button_selector"
+            android:text="No"
+            android:checked="true"
+            android:id="@+id/radioButton_no"
+            android:textColor="@color/black"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:textColor="@color/theme_red"
+            android:textStyle="bold"
+            android:text="Add Image:"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/image_add_sign"
+            android:id="@+id/img1"
+            android:onClick="add_Image"
+
+            />
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/image_add_sign"
+            android:id="@+id/img2"
+            android:onClick="add_Image"/>
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/image_add_sign"
+            android:id="@+id/img3"
+            android:onClick="add_Image"/>
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/image_add_sign"
+            android:id="@+id/img4"
+            android:onClick="add_Image"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="  Upload Item  "
+        android:layout_gravity="center_horizontal"
+        android:onClick="add_New_Item"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" \n "/>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
